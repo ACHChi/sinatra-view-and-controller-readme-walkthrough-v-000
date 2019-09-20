@@ -1,4 +1,4 @@
-require_relative 'config/environment'
+  require_relative 'config/environment'
 
 class App < Sinatra::Base
   get '/reverse' do
@@ -12,5 +12,11 @@ class App < Sinatra::Base
   get '/friends' do
     # Write your code here!
 
+  end
+
+  post '/reverse' do
+    puts params
+   
+    erb :reversed
   end
 end
